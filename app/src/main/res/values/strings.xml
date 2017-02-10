@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Clases Android</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main6">Main6Activity</string>
+    <string name="title_activity_main7">Main7Activity</string>
+    <string name="texto_por_defecto">Texto por defecto</string>
+    <string name="cabecera">Lista de Cursos de Programación</string>
+    <string name="pantalla">Siguiente Pantalla</string>
+    <string name="calculadora">Calculadora</string>
+    <string name="title_activity_main8">Main8Activity</string>
+    <string name="title_activity_main9">Main9Activity</string>
+    <string name="title_activity_main10">Main10Activity</string>
+    <string name="title_activity_main11">Main11Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

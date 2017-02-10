@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android Lessons</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="texto_por_defecto">Default text</string>
+    <string name="cabecera">Programing Course List</string>
+    <string name="pantalla">Next Screen</string>
+    <string name="calculadora">Calculator</string>
+</resources>

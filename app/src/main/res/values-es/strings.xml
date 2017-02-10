@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Clases Android</string>
+    <string name="action_settings">Opciones</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="texto_por_defecto">Texto por defecto</string>
+    <string name="cabecera">Lista de Cursos de Programación</string>
+    <string name="pantalla">Siguiente Pantalla</string>
+    <string name="calculadora">Calculadora</string>
+</resources>

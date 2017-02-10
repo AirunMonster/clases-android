@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="holamundo.app.morales.nuria.holamundo.Main7Activity"
+    tools:showIn="@layout/activity_main7"
+    android:clipChildren="true"
+    android:weightSum="1"
+    android:stretchColumns="*">
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.32">
+
+         <TextView
+             android:id="@+id/textView"
+             android:layout_span="4"
+             android:gravity="top|right"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:textSize="36sp"/>
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.32">
+
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_span="4"
+            android:gravity="top|right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.06">
+        <Button android:text="Historial" android:layout_span="3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:gravity="center_vertical|center_horizontal|start"
+                android:id="@+id/boton_historial"
+            android:layout_height="match_parent" />
+        <Button android:text="Borrar"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/boton_borrar"
+            android:layout_span="1"
+            android:layout_height="match_parent" />
+    </TableRow>
+
+    <TableRow android:layout_weight="0.06">
+        <Button android:text="C"
+                android:id="@+id/boton_C"
+                style="@style/Boton_Calculadora_Gris"
+            android:layout_height="match_parent" />
+
+        <Button android:text="( )"
+                android:id="@+id/boton_parentesis"
+            style="@style/Boton_Calculadora_Gris"
+            android:layout_height="match_parent" />
+
+        <Button android:text="%"
+                android:id="@+id/boton_por_ciento"
+            style="@style/Boton_Calculadora_Gris"
+            android:layout_height="match_parent" />
+
+        <Button android:text="/"
+                android:id="@+id/boton_dividir"
+            style="@style/Boton_Calculadora_Gris"
+            android:layout_height="match_parent" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.06">
+        <Button android:text="7"
+                style="@style/Boton_Calculadora_Blanco"
+                android:id="@+id/boton_7"
+            android:layout_height="match_parent" />
+        <Button android:text="8"
+            style="@style/Boton_Calculadora_Blanco"
+                android:id="@+id/boton_8"
+            android:layout_height="match_parent" />
+        <Button android:text="9"
+            style="@style/Boton_Calculadora_Blanco"
+                android:id="@+id/boton_9"
+            android:layout_height="match_parent" />
+        <Button android:text="*"
+                android:id="@+id/boton_multiplicar"
+                style="@style/Boton_Calculadora_Gris"
+            android:layout_height="match_parent" />
+    </TableRow>
+
+    <TableRow android:layout_weight="0.06">
+        <Button android:text="4"
+            style="@style/Boton_Calculadora_Blanco"
+                android:id="@+id/boton_4"
+            android:layout_height="match_parent" />
+        <Button android:text="5"
+            style="@style/Boton_Calculadora_Blanco"
+                android:id="@+id/boton_5"
+            android:layout_height="match_parent" />
+        <Button android:text="6"
+            style="@style/Boton_Calculadora_Blanco"
+                android:id="@+id/boton_6"
+            android:layout_height="match_parent" />
+
+        <Button android:text="-"
+                android:id="@+id/boton_menos"
+                style="@style/Boton_Calculadora_Gris"
+            android:layout_height="match_parent" />
+    </TableRow>
+    <TableRow android:layout_weight="0.06">
+        <Button android:text="1"
+            style="@style/Boton_Calculadora_Blanco"
+                android:id="@+id/boton_1"
+            android:layout_height="match_parent" />
+        <Button android:text="2"
+            style="@style/Boton_Calculadora_Blanco"
+                android:id="@+id/boton_2"
+            android:layout_height="match_parent" />
+        <Button android:text="3"
+            style="@style/Boton_Calculadora_Blanco"
+                android:id="@+id/boton_3"
+            android:layout_height="match_parent" />
+        <Button android:text="+"
+                android:id="@+id/boton_mas"
+                style="@style/Boton_Calculadora_Gris"
+            android:layout_height="match_parent" />
+    </TableRow>
+    <TableRow android:layout_weight="0.06">
+        <Button android:text="."
+            style="@style/Boton_Calculadora_Blanco"
+                android:id="@+id/boton_decimal"
+            android:layout_height="match_parent" />
+        <Button android:text="0"
+            style="@style/Boton_Calculadora_Blanco"
+                android:id="@+id/boton_0"
+            android:layout_height="match_parent" />
+        <Button android:text="+/-"
+            style="@style/Boton_Calculadora_Blanco"
+                android:id="@+id/boton_signo"
+            android:layout_height="match_parent" />
+        <Button android:text="="
+                style="@style/Boton_Calculadora_Gris_Oscuro"
+                android:id="@+id/boton_igual"
+            android:layout_height="match_parent" />
+    </TableRow>
+</TableLayout>
