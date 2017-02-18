@@ -8,23 +8,23 @@
         android:id="@+id/action_settings"
         android:title="Settings"
         android:orderInCategory="100"
-        android:showAsAction="never">
+        app:showAsAction="never">
     </item>
 
     <item
         android:id="@+id/buscar"
         android:title="Buscar"
         android:orderInCategory="100"
-        android:icon=""
-        android:showAsAction="ifRoom">
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="ifRoom">
     </item>
 
     <item
         android:id="@+id/nuevo"
         android:title="Nuevo"
         android:orderInCategory="100"
-        android:icon=""
-        android:showAsAction="ifRoom|withText">
+        android:icon="@drawable/ic_android_black_24dp"
+        app:showAsAction="ifRoom|withText">
     </item>
 
 </menu>
