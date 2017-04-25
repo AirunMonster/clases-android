@@ -12,7 +12,9 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class Main11Activity extends AppCompatActivity implements View.OnClickListener{
-    Button buttonNewScreen, buttonEjSplashScreen, buttonEjBotonProg, buttonEjBarraInf;
+    Button  buttonNewScreen, buttonEjSplashScreen, buttonEjBotonProg, buttonEjBarraInf,
+            buttonEjSharedPreferences, buttonEjNuevaFuente, buttonEjNavigationDrawer,
+            buttonEjNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +36,19 @@ public class Main11Activity extends AppCompatActivity implements View.OnClickLis
         buttonEjSplashScreen = (Button) findViewById(R.id.ejSplashScreen);
         buttonEjBotonProg = (Button) findViewById(R.id.ejBotonProg);
         buttonEjBarraInf = (Button) findViewById(R.id.ejBarraInf);
+        buttonEjSharedPreferences = (Button) findViewById(R.id.ejSharedPreferences);
+        buttonEjNuevaFuente = (Button) findViewById(R.id.ejNuevaFuente);
+        buttonEjNavigationDrawer = (Button) findViewById(R.id.ejNavigationDrawer);
+        buttonEjNavigationView = (Button) findViewById(R.id.ejNavigationView);
 
         buttonNewScreen.setOnClickListener(this);
         buttonEjBotonProg.setOnClickListener(this);
         buttonEjSplashScreen.setOnClickListener(this);
         buttonEjBarraInf.setOnClickListener(this);
+        buttonEjSharedPreferences.setOnClickListener(this);
+        buttonEjNuevaFuente.setOnClickListener(this);
+        buttonEjNavigationDrawer.setOnClickListener(this);
+        buttonEjNavigationView.setOnClickListener(this);
     }
 
     @Override
@@ -65,6 +75,26 @@ public class Main11Activity extends AppCompatActivity implements View.OnClickLis
                 Toast.makeText(getApplicationContext(), "Cambiando a Ejemplo Barra Inferior", Toast.LENGTH_SHORT).show();
                 Intent intent4 = new Intent(this, Main21Activity.class);
                 startActivity(intent4);
+                break;
+            case R.id.ejSharedPreferences:
+                Toast.makeText(getApplicationContext(), "Cambiando a Ejemplo Guardar Preferencias", Toast.LENGTH_SHORT).show();
+                Intent intent5 = new Intent(this, Main22Activity.class);
+                startActivity(intent5);
+                break;
+            case R.id.ejNuevaFuente:
+                Toast.makeText(getApplicationContext(), "Cambiando a Ejemplo Nueva Fuente", Toast.LENGTH_SHORT).show();
+                Intent intent6 = new Intent(this, Main23Activity.class);
+                startActivity(intent6);
+                break;
+            case R.id.ejNavigationDrawer:
+                Toast.makeText(getApplicationContext(), "Cambiando a Ejemplo Navigation Drawer", Toast.LENGTH_SHORT).show();
+                Intent intent7 = new Intent(this, Main24Activity.class);
+                startActivity(intent7);
+                break;
+            case R.id.ejNavigationView:
+                Toast.makeText(getApplicationContext(), "Cambiando a Ejemplo Navigation View", Toast.LENGTH_SHORT).show();
+                Intent intent8 = new Intent(this, Main25Activity.class);
+                startActivity(intent8);
                 break;
             default:
                 break;

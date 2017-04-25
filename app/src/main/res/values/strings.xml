@@ -21,4 +21,32 @@
     <string name="title_activity_main18">Main18Activity</string>
     <string name="title_activity_main19">Main19Activity</string>
     <string name="title_activity_main20">Main20Activity</string>
+    <string name="title_activity_main22">Main22Activity</string>
+    <string name="title_activity_main23">Main23Activity</string>
+    <string name="title_activity_main24">Main24Activity</string>
+
+    <string-array name="icons">
+        <item>@drawable/ic_search_black_24dp</item>
+        <item>@drawable/ic_exit_to_app_black_24dp</item>
+        <item>@drawable/ic_android_black_24dp</item>
+        <item>@drawable/ic_search_black_24dp</item>
+        <item>@drawable/ic_exit_to_app_black_24dp</item>
+        <item>@drawable/ic_android_black_24dp</item>
+        <item>@drawable/ic_search_black_24dp</item>
+        <item>@drawable/ic_exit_to_app_black_24dp</item>
+        <item>@drawable/ic_android_black_24dp</item>
+    </string-array>
+
+    <string-array name="titulos">
+        <item>Opción 1</item>
+        <item>Opción 2</item>
+        <item>Opción 3</item>
+        <item>Opción 4</item>
+        <item>Opción 5</item>
+        <item>Opción 6</item>
+        <item>Opción 7</item>
+        <item>Opción 8</item>
+        <item>Opción 9</item>
+    </string-array>
+    <string name="title_activity_main25">Main25Activity</string>
 </resources>

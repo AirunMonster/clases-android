@@ -7,5 +7,7 @@
     <color name="colorBlanco">#ffffff</color>
     <color name="colorGris">#DFDFDF</color>
     <color name="colorGrisOscuro">#747474</color>
+    <color name="blueHeader">#2F69B2</color>
+
     <item name="verde" type="color">#FF99CC00</item>
 </resources>
