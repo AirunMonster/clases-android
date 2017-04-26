@@ -10,52 +10,71 @@
     tools:context="holamundo.app.morales.nuria.holamundo.Main11Activity"
     tools:showIn="@layout/activity_main11">
 
-    <Button
-        android:id="@+id/botonNewScreen"
-        android:text="@string/pantalla"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    
-    <Button
-        android:id="@+id/ejBotonProg"
-        android:text="Ejemplo Elementos con Programación"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/ejSplashScreen"
-        android:text="Ejemplo SplashScreen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/ejBarraInf"
-        android:text="Ejemplo Barra Inferior"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/botonNewScreen"
+                android:text="@string/pantalla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/ejSharedPreferences"
-        android:text="Ejemplo Guardar Preferencias"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/ejBotonProg"
+                android:text="Ejemplo Elementos con Programación"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/ejNuevaFuente"
-        android:text="Ejemplo Cambiar Tipo de Fuente"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/ejSplashScreen"
+                android:text="Ejemplo SplashScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/ejNavigationDrawer"
-        android:text="Ejemplo Navigation Drawer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/ejBarraInf"
+                android:text="Ejemplo Barra Inferior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/ejNavigationView"
-        android:text="Ejemplo Navigation View"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/ejSharedPreferences"
+                android:text="Ejemplo Guardar Preferencias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/ejNuevaFuente"
+                android:text="Ejemplo Cambiar Tipo de Fuente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/ejNavigationDrawer"
+                android:text="Ejemplo Navigation Drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/ejNavigationView"
+                android:text="Ejemplo Navigation View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/ejAnimaciones"
+                android:text="Ejemplo Animaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

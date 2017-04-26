@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class Main11Activity extends AppCompatActivity implements View.OnClickListener{
     Button  buttonNewScreen, buttonEjSplashScreen, buttonEjBotonProg, buttonEjBarraInf,
             buttonEjSharedPreferences, buttonEjNuevaFuente, buttonEjNavigationDrawer,
-            buttonEjNavigationView;
+            buttonEjNavigationView, buttonEjAnimacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,7 @@ public class Main11Activity extends AppCompatActivity implements View.OnClickLis
         buttonEjNuevaFuente = (Button) findViewById(R.id.ejNuevaFuente);
         buttonEjNavigationDrawer = (Button) findViewById(R.id.ejNavigationDrawer);
         buttonEjNavigationView = (Button) findViewById(R.id.ejNavigationView);
+        buttonEjAnimacion = (Button) findViewById(R.id.ejAnimaciones);
 
         buttonNewScreen.setOnClickListener(this);
         buttonEjBotonProg.setOnClickListener(this);
@@ -49,6 +50,7 @@ public class Main11Activity extends AppCompatActivity implements View.OnClickLis
         buttonEjNuevaFuente.setOnClickListener(this);
         buttonEjNavigationDrawer.setOnClickListener(this);
         buttonEjNavigationView.setOnClickListener(this);
+        buttonEjAnimacion.setOnClickListener(this);
     }
 
     @Override
@@ -95,6 +97,11 @@ public class Main11Activity extends AppCompatActivity implements View.OnClickLis
                 Toast.makeText(getApplicationContext(), "Cambiando a Ejemplo Navigation View", Toast.LENGTH_SHORT).show();
                 Intent intent8 = new Intent(this, Main25Activity.class);
                 startActivity(intent8);
+                break;
+            case R.id.ejAnimaciones:
+                Toast.makeText(getApplicationContext(), "Cambiando a Ejemplo Animación", Toast.LENGTH_SHORT).show();
+                Intent intent9 = new Intent(this, Main26Activity.class);
+                startActivity(intent9);
                 break;
             default:
                 break;
