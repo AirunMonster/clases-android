@@ -26,9 +26,8 @@ public class Main7Activity extends AppCompatActivity implements View.OnClickList
     Integer contadorOperandos = 0;
     Integer decimal = 0;
     Integer maxDigitos = 0;
-    Boolean signo = true; //True es positivo y False es negativo.
     Boolean digito = false;
-    Double primerOperando, segundoOperando, resultado;
+    private final static String LOG_TAG = Main7Activity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -230,24 +229,17 @@ public class Main7Activity extends AppCompatActivity implements View.OnClickList
                 // El texto está vacío
                 if (texto2.equals("")){
                     textView.setText("(-");
-                    signo = false;
                 }
                 else {
                     if (texto2.equals("(-")){
                         textView.setText("");
-                        signo = true;
                     }
                     else {
                         // Ya hay texto. No viene en blanco.
-                        // Si es dígito y true se añade (- por delante. Si es operación y true se añade (- por detrás. MAAAAAAAAAALLLLLLLLLLL
-                        Log.d("Else",":"+textView);
-                        if (digito) Log.d("Digito","Ok");
-                        if (signo) Log.d("Signo","Ok");
-                        if (digito && signo){
-                            texto2 = "(-"+texto2;
-                            textView.append(texto2);
-                            Log.d("TextView",":"+textView);
-                        }
+                        // Si es dígito y true se añade (- por delante. Si es operación y true se añade (- por detrás.
+                        Log.d(LOG_TAG, "Else: " + texto2);
+                        if (digito) Log.d(LOG_TAG, "Digito Ok");
+                        Encontrar_Indicador_Signo(texto2);
                     }
                 }
                 break;
@@ -336,6 +328,54 @@ public class Main7Activity extends AppCompatActivity implements View.OnClickList
         //Comprobamos si han borrado un decimal. Si es así se marca por si quisieran poner otro que puedan hacerlo.
         if (lastchar.equals(".")){
             decimal = 0;
+        }
+    }
+
+    public void Encontrar_Indicador_Signo (String texto){
+        boolean flag = false;
+        int i;
+        String textoAuxiliar="";
+        Log.d(LOG_TAG, "Texto: " + texto);
+        Log.d(LOG_TAG, "Texto Length: " + texto.length());
+
+        for (i = texto.length()-1; i >= 0; i--) {
+            char aux = texto.charAt(i);
+            Log.d(LOG_TAG, "aux: " + aux);
+            Log.d(LOG_TAG, "i: " + i);
+            if (flag) Log.d(LOG_TAG, "FLAG");
+            if (aux == '-' | aux == '+' | aux == '*' | aux == '/') {
+                flag = true;
+            }
+            if (aux == '(') {
+                if (flag){
+                    if (digito) {
+                        /* Caso 4: Quitar (- por delante */
+                        textoAuxiliar = texto.substring(0, i) + texto.substring(i + 2, texto.length());
+                        textView.setText(textoAuxiliar);
+                        Log.d(LOG_TAG, "TextView4: " + textView.getText().toString());
+                    }
+                    else {
+                        /* Caso 6: Quitar (- por detras */
+                        textoAuxiliar = texto.substring(0, i) + texto.substring(i + 2, texto.length());
+                        textView.setText(textoAuxiliar);
+                        Log.d(LOG_TAG, "TextView6: " + textView.getText().toString());
+                    }
+                }
+            }
+            else {
+                if (flag) {
+                    /* Caso 5:  Añadir (- por detrás. */
+                    textoAuxiliar = texto.substring(0, i + 1) + "(-" + texto.substring(i + 1, texto.length());
+                    textView.setText(textoAuxiliar);
+                    Log.d(LOG_TAG, "TextView5: " + textView.getText().toString());
+                }
+                else {
+                    /* Caso 3: Añadir (- por delante. */
+                    textoAuxiliar = "(-" + texto;
+                    textView.setText(textoAuxiliar);
+                    Log.d(LOG_TAG, "TextView3: " + textView.getText().toString());
+                }
+            }
         }
     }
 }

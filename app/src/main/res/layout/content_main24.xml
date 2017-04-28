@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main24"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="holamundo.app.morales.nuria.holamundo.Main24Activity"
+    tools:showIn="@layout/activity_main24">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlanco">
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/navlist"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:background="#424242"
+        android:divider="#2e2e2e"
+        android:layout_gravity="start">
+    </ListView>
+
+</android.support.v4.widget.DrawerLayout>

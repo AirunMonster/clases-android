@@ -10,46 +10,77 @@
     tools:context="holamundo.app.morales.nuria.holamundo.Main10Activity"
     tools:showIn="@layout/activity_main10">
 
-    <Button
-        android:id="@+id/botonVibrar"
-        android:text="Activar Vibración"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/botonFlash"
-        android:text="On-Off Linterna v23"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/botonFlash15"
-        android:text="On-Off Linterna v15"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/botonNewScreen"
+                android:text="@string/pantalla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/ejMenu"
-        android:text="Ejemplo de Menú"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/botonVibrar"
+                android:text="Activar Vibración"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/ejMaterialDesing"
-        android:text="Ejemplo de Material Desing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/botonFlash"
+                android:text="On-Off Linterna v23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/ejActionBar"
-        android:text="Ejemplo de Action Bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/botonFlash15"
+                android:text="On-Off Linterna v15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/botonNewScreen"
-        android:text="@string/pantalla"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/ejMenu"
+                android:text="Ejemplo de Menú"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/ejMaterialDesing"
+                android:text="Ejemplo de Material Desing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/ejActionBar"
+                android:text="Ejemplo de Action Bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/videoView"
+                android:text="Ejemplo de VideoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/ejDatePicker"
+                android:text="Ejemplo DatePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/ejRatingBar"
+                android:text="Ejemplo RatingBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

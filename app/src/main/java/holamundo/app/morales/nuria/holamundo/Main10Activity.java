@@ -18,7 +18,9 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class Main10Activity extends AppCompatActivity implements View.OnClickListener{
-    Button buttonNewScreen, buttonVibrar, buttonFlash, buttonFlash15, buttonEjMenu, buttonEjMaterialDesing, buttonEjActionBar;
+    Button  buttonNewScreen, buttonVibrar, buttonFlash, buttonFlash15, buttonEjMenu,
+            buttonEjMaterialDesing, buttonEjActionBar, buttonVideoView, buttonEjDatePicker,
+            buttonEjRatingBar;
     Camera camera;
     boolean turnon = false;
 
@@ -45,6 +47,9 @@ public class Main10Activity extends AppCompatActivity implements View.OnClickLis
         buttonEjMenu = (Button) findViewById(R.id.ejMenu);
         buttonEjMaterialDesing = (Button) findViewById(R.id.ejMaterialDesing);
         buttonEjActionBar = (Button) findViewById(R.id.ejActionBar);
+        buttonVideoView = (Button) findViewById(R.id.videoView);
+        buttonEjDatePicker = (Button) findViewById(R.id.ejDatePicker);
+        buttonEjRatingBar = (Button) findViewById(R.id.ejRatingBar);
 
         buttonNewScreen.setOnClickListener(this);
         buttonVibrar.setOnClickListener(this);
@@ -53,7 +58,9 @@ public class Main10Activity extends AppCompatActivity implements View.OnClickLis
         buttonEjMenu.setOnClickListener(this);
         buttonEjMaterialDesing.setOnClickListener(this);
         buttonEjActionBar.setOnClickListener(this);
-
+        buttonVideoView.setOnClickListener(this);
+        buttonEjDatePicker.setOnClickListener(this);
+        buttonEjRatingBar.setOnClickListener(this);
     }
     @Override
     public void onClick(View view) {
@@ -146,6 +153,21 @@ public class Main10Activity extends AppCompatActivity implements View.OnClickLis
                 Toast.makeText(getApplicationContext(), "Cambiando a Ejemplo Action Bar", Toast.LENGTH_SHORT).show();
                 Intent intent4 = new Intent(this, Main14Activity.class);
                 startActivity(intent4);
+                break;
+            case R.id.videoView:
+                Toast.makeText(getApplicationContext(), "Cambiando a Ejemplo VideoView", Toast.LENGTH_SHORT).show();
+                Intent intent5 = new Intent(this, Main15Activity.class);
+                startActivity(intent5);
+                break;
+            case R.id.ejDatePicker:
+                Toast.makeText(getApplicationContext(), "Cambiando a Ejemplo DatePicker", Toast.LENGTH_SHORT).show();
+                Intent intent6 = new Intent(this, Main16Activity.class);
+                startActivity(intent6);
+                break;
+            case R.id.ejRatingBar:
+                Toast.makeText(getApplicationContext(), "Cambiando a Ejemplo RatingBar", Toast.LENGTH_SHORT).show();
+                Intent intent7 = new Intent(this, Main17Activity.class);
+                startActivity(intent7);
                 break;
             default:
                 break;

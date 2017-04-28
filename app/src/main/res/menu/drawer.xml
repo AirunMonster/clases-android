@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/modificar"
+            android:checked="false"
+            android:title="Modificar datos"
+            android:icon="@drawable/ic_search_black_24dp_xxxhdpi">
+        </item>
+        <item
+            android:id="@+id/cuentas"
+            android:checked="false"
+            android:title="Crear Cuenta"
+            android:icon="@drawable/ic_search_black_24dp">
+        </item>
+        <item
+            android:id="@+id/redessociales"
+            android:checked="false"
+            android:title="Redes Sociales"
+            android:icon="@drawable/ic_android_black_24dp">
+        </item>
+        <item
+            android:id="@+id/cerrar"
+            android:checked="false"
+            android:title="Cerrar Sesión"
+            android:icon="@drawable/ic_exit_to_app_black_24dp">
+        </item>
+    </group>
+
+</menu>
