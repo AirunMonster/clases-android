@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class Main11Activity extends AppCompatActivity implements View.OnClickListener{
     Button  buttonNewScreen, buttonEjSplashScreen, buttonEjBotonProg, buttonEjBarraInf,
             buttonEjSharedPreferences, buttonEjNuevaFuente, buttonEjNavigationDrawer,
-            buttonEjNavigationView, buttonEjAnimacion;
+            buttonEjNavigationView, buttonEjAnimacion, buttonEjSensores;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,7 @@ public class Main11Activity extends AppCompatActivity implements View.OnClickLis
         buttonEjNavigationDrawer = (Button) findViewById(R.id.ejNavigationDrawer);
         buttonEjNavigationView = (Button) findViewById(R.id.ejNavigationView);
         buttonEjAnimacion = (Button) findViewById(R.id.ejAnimaciones);
+        buttonEjSensores = (Button) findViewById(R.id.ejSensores);
 
         buttonNewScreen.setOnClickListener(this);
         buttonEjBotonProg.setOnClickListener(this);
@@ -51,6 +52,7 @@ public class Main11Activity extends AppCompatActivity implements View.OnClickLis
         buttonEjNavigationDrawer.setOnClickListener(this);
         buttonEjNavigationView.setOnClickListener(this);
         buttonEjAnimacion.setOnClickListener(this);
+        buttonEjSensores.setOnClickListener(this);
     }
 
     @Override
@@ -102,6 +104,11 @@ public class Main11Activity extends AppCompatActivity implements View.OnClickLis
                 Toast.makeText(getApplicationContext(), "Cambiando a Ejemplo Animación", Toast.LENGTH_SHORT).show();
                 Intent intent9 = new Intent(this, Main26Activity.class);
                 startActivity(intent9);
+                break;
+            case R.id.ejSensores:
+                Toast.makeText(getApplicationContext(), "Cambiando a Ejemplo Sensores", Toast.LENGTH_SHORT).show();
+                Intent intent10 = new Intent(this, Main27Activity.class);
+                startActivity(intent10);
                 break;
             default:
                 break;
